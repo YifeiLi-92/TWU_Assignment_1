@@ -11,7 +11,7 @@ public class PrimeFactors {
 
     public static String generate(int n){
         String result = "";
-        for(int i = 2;i <= n/2;i++){
+        for(int i = 2;i <= Math.sqrt(n);i++){
             if(n % i == 0) {
                 int j = 2;
                 for (j = 2; j <= i / 2; j++) {
